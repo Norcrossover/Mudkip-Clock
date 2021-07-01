@@ -1,2 +1,2 @@
 # JS_Website_Clock
- This will be a web application that has a funny little clock
+The application will be a fully functioning clock running with real time and have a few buttons to run functions such as setting an alarm
