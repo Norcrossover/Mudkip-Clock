@@ -1,17 +1,16 @@
+
 *, *::before, *::after {
     box-sizing:border-box;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-
 }
 
 body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, white , skyblue);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
-    
+    overflow: hidden;     
 }
 
 .page {
@@ -29,7 +28,7 @@ body {
 }
 
  .clock .number {
-    --rotation: 30;
+    --rotation: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -55,7 +54,7 @@ body {
     position: absolute;
     bottom: 50%;
     left: 50%;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transform-origin: bottom;
