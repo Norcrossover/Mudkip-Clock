@@ -6,17 +6,17 @@ const secondHand = document.querySelector('[data-second-hand]')
 
 
 function setClock() {
-    const currentDate = new Date();
-    const secondsRatio = currentDate.getSeconds() / 60;
-    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
-    const hoursRatio = (minutesRation + currentDate.getHours()) / 60;
-    setRotation(secondHand, secondsRatio);
-    setRotation(minuteHand, minuteRatio);
-    setRotation(hourHand, hourRatio);
+    const currentDate = new Date()
+    const secondsRatio = currentDate.getSeconds() / 60
+    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+    const hoursRatio = (minutesRatio + currentDate.getHours()) / 12
+    setRotation(secondHand, secondsRatio)
+    setRotation(minuteHand, minutesRatio)
+    setRotation(hourHand, hoursRatio)
 }
 
-function setRotation(element, rotationRatio) {
-    element.style.setProperty('--rotation', rotationRatio * 360)
+function setRotation(element, ratio) {
+    element.style.setProperty('--rotation', ratio * 360)
 }
 
 setClock()
